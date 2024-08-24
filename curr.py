@@ -5,6 +5,7 @@ from docx import Document
 # Define the source directory and destination file path for the first block
 source_directory_1 = r'C:\Users\OMDEV\OneDrive\Python_3_12_5\drOidwOrks_V_1_1\chatbot'
 destination_file = r'C:\Users\OMDEV\OneDrive\Python_3_12_5\drOidwOrks_V_1_1\driodworks.doc'
+## just new 
 
 # Create a new Document or open an existing one
 doc = Document()
