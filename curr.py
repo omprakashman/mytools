@@ -2,9 +2,11 @@ import os
 import glob
 from docx import Document
 
+#Om changed on Aug 25
+
 # Define the source directory and destination file path for the first block
-source_directory_1 = r'C:\Users\OMDEV\OneDrive\Python_3_12_5\drOidwOrks_V_1_1\chatbot'
-destination_file = r'C:\Users\OMDEV\OneDrive\Python_3_12_5\drOidwOrks_V_1_1\driodworks.doc'
+source_directory_1 = r'C:\Users\OMCENTER\projects\drOidwOrks_V_1_1\chatbot'
+destination_file = r'C:\Users\OMCENTER\projects\drOidwOrks_V_1_1\driodworks.doc'
 ## just new 
 
 # Create a new Document or open an existing one
@@ -27,7 +29,7 @@ for py_file in py_files_1:
 		doc.add_paragraph('\n')  # Add a newline for separation between files
 
 # Define the source directory for the second block
-source_directory_2 = r'C:\Users\OMDEV\OneDrive\Python_3_12_5\drOidwOrks_V_1_1\drOid'
+source_directory_2 = r'C:\Users\OMCENTER\projects\drOidwOrks_V_1_1\drOid'
 
 # Find all .py files in the second source directory
 py_files_2 = glob.glob(os.path.join(source_directory_2, '*.py'))
