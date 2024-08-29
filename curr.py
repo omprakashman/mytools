@@ -1,7 +1,7 @@
 import os
 import glob
 from datetime import datetime
-# OM Commit C
+# OM Commit A
 
 # Define the source directories
 source_directory_1 = r'C:\Users\OMCENTER\projects\mytools\simplelogin\droid'
