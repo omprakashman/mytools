@@ -4,11 +4,11 @@ from datetime import datetime
 # branch 2
 
 # Define the source directories
-source_directory_1 = r'C:\Users\OMCENTER\projects\mytools\simplelogin\droid'
-source_directory_2 = r'C:\Users\OMCENTER\projects\mytools\simplelogin\authapp'
+source_directory_1 = r'C:\Users\OMCENTER\projects\mytools\simpleMYSQLDB\droid'
+source_directory_2 = r'C:\Users\OMCENTER\projects\mytools\simpleMYSQLDB\registration'
 
 # Define the destination file
-destination_file = r'C:\Users\OMCENTER\Desktop\driodworks.txt'
+destination_file = r'C:\Users\OMCENTER\Desktop\djangOproj.txt'
 
 # Open the destination file in write mode
 with open(destination_file, 'w') as dest_file:
