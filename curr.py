@@ -4,8 +4,8 @@ from datetime import datetime
 # branch 2
 
 # Define the source directories
-source_directory_1 = r'C:\Users\OMCENTER\projects\mytools\simpleMYSQLDB\droid'
-source_directory_2 = r'C:\Users\OMCENTER\projects\mytools\simpleMYSQLDB\registration'
+source_directory_1 = r'C:\Users\OMCENTER\projects\drOidwOrks_V_1_2\droid'
+source_directory_2 = r'C:\Users\OMCENTER\projects\drOidwOrks_V_1_2\registration'
 
 # Define the destination file
 destination_file = r'C:\Users\OMCENTER\Desktop\djangOproj.txt'
@@ -14,6 +14,9 @@ destination_file = r'C:\Users\OMCENTER\Desktop\djangOproj.txt'
 with open(destination_file, 'w') as dest_file:
 	# Get the current date and time
 	current_datetime = datetime.now().strftime("%b %d, %y %I:%M %p")
+    
+	#write file name 
+	dest_file.write("C:\\Users\\OMCENTER\\projects\\drOidwOrks_V_1_2\\ >>\n\n")
 	# Write the header with the current date and time
 	dest_file.write(f"Django Text File  :  {destination_file} On Date @ Time {current_datetime} >>\n\n")
 
