@@ -4,11 +4,12 @@ from datetime import datetime
 # OM Commit C
 
 # Define the source directories
-source_directory_1 = r'C:\Users\OMCENTER\projects\mytools\simplelogin\droid'
-source_directory_2 = r'C:\Users\OMCENTER\projects\mytools\simplelogin\authapp'
+source_directory_1 = r'C:\Users\droidcoder\Projects\DW-middleware\jeev\drOidwOrks_V_1_2\droid'
+source_directory_2 = r'C:\Users\droidcoder\Projects\DW-middleware\jeev\drOidwOrks_V_1_2\chatbot'
+source_directory_3 = r'C:\Users\droidcoder\Projects\DW-middleware\jeev\drOidwOrks_V_1_2\jeevapp'
 
 # Define the destination file
-destination_file = r'C:\Users\OMCENTER\Desktop\driodworks.txt'
+destination_file = r'C:\Users\droidcoder\Desktop\driodworks.txt'
 
 # Open the destination file in write mode
 with open(destination_file, 'w') as dest_file:
@@ -35,6 +36,22 @@ with open(destination_file, 'w') as dest_file:
 
 	# Loop 2: Find all .py files in the second source directory
 	py_files_2 = glob.glob(os.path.join(source_directory_2, '*.py'))
+
+	# Loop through each .py file in the second source directory
+	for py_file in py_files_2:
+		# Add the file name before the content
+		file_name = os.path.basename(py_file)
+		dest_file.write(f"<<****** Python file app directory :  {file_name} **********>>\n")
+		
+		# Open and read the content of the .py file
+		with open(py_file, 'r') as file:
+			content = file.read()
+			# Append the content to the destination file
+			dest_file.write(content)
+			dest_file.write('\n\n')  # Add a newline for separation between files
+
+	# Loop 3: Find all .py files in the second source directory
+	py_files_2 = glob.glob(os.path.join(source_directory_3, '*.py'))
 
 	# Loop through each .py file in the second source directory
 	for py_file in py_files_2:

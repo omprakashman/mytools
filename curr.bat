@@ -1,3 +1,3 @@
-python C:\Users\OMCENTER\projects\mytools\curr\mytools\curr.py
+python C:\Users\droidcoder\Projects\mytools\curr.py
 
 pause
